@@ -1,0 +1,258 @@
+EESchema Schematic File Version 4
+LIBS:TKD_DBTypeC_r1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R1
+U 1 1 5FFBCE65
+P 2450 1700
+F 0 "R1" V 2254 1700 50  0000 C CNN
+F 1 "5.1k" V 2345 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2450 1700 50  0001 C CNN
+F 3 "~" H 2450 1700 50  0001 C CNN
+	1    2450 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5FFBDACA
+P 2450 2300
+F 0 "R2" V 2254 2300 50  0000 C CNN
+F 1 "5.1k" V 2345 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2450 2300 50  0001 C CNN
+F 3 "~" H 2450 2300 50  0001 C CNN
+	1    2450 2300
+	0    1    1    0   
+$EndComp
+NoConn ~ 2050 1600
+NoConn ~ 2050 2200
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5FFC0658
+P 4150 1100
+F 0 "FB2" V 4300 1100 50  0000 C CNN
+F 1 "500@100MHz" V 4400 1100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 4080 1100 50  0001 C CNN
+F 3 "~" H 4150 1100 50  0001 C CNN
+	1    4150 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Power_Protection:PRTR5V0U2X D1
+U 1 1 5FFC174C
+P 4050 2350
+F 0 "D1" V 3700 2000 50  0000 L CNN
+F 1 "PRTR5V0U2X" V 4400 2550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 4110 2350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 4110 2350 50  0001 C CNN
+	1    4050 2350
+	0    1    1    0   
+$EndComp
+Text GLabel 3450 1100 0    50   Output ~ 0
+VBUS
+Text GLabel 2050 1400 2    50   Input ~ 0
+VBUS
+Text GLabel 2050 1500 2    50   Input ~ 0
+VBUS
+Wire Wire Line
+	4600 1100 4600 1050
+Wire Wire Line
+	4250 1100 4600 1100
+$Comp
+L power:+5V #PWR0101
+U 1 1 5FFC3CC8
+P 4600 1050
+F 0 "#PWR0101" H 4600 900 50  0001 C CNN
+F 1 "+5V" H 4615 1223 50  0000 C CNN
+F 2 "" H 4600 1050 50  0001 C CNN
+F 3 "" H 4600 1050 50  0001 C CNN
+	1    4600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5FFC416B
+P 3700 1100
+F 0 "F1" V 3450 1100 50  0000 C CNN
+F 1 "0805L050" V 3550 1100 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 3750 900 50  0001 L CNN
+F 3 "~" H 3700 1100 50  0001 C CNN
+	1    3700 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 1100 3600 1100
+Wire Wire Line
+	3800 1100 4050 1100
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5FFCB714
+P 2300 2800
+F 0 "FB1" V 2450 2800 50  0000 C CNN
+F 1 "500@100MHz" V 2550 2800 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 2230 2800 50  0001 C CNN
+F 3 "~" H 2300 2800 50  0001 C CNN
+	1    2300 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FFCD1DC
+P 2600 3150
+F 0 "#PWR0102" H 2600 2900 50  0001 C CNN
+F 1 "GND" H 2605 2977 50  0000 C CNN
+F 2 "" H 2600 3150 50  0001 C CNN
+F 3 "" H 2600 3150 50  0001 C CNN
+	1    2600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2350 3300 2450
+$Comp
+L power:GND #PWR0103
+U 1 1 5FFD0678
+P 3300 2450
+F 0 "#PWR0103" H 3300 2200 50  0001 C CNN
+F 1 "GND" H 3305 2277 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 2050 1    50   BiDi ~ 0
+VBUS
+Wire Wire Line
+	4550 2350 4800 2350
+Wire Wire Line
+	4800 2350 4800 2050
+Wire Wire Line
+	3300 2350 3550 2350
+Text GLabel 4050 1750 1    50   BiDi ~ 0
+D+
+Text GLabel 4050 2950 3    50   BiDi ~ 0
+D-
+Wire Wire Line
+	4050 2950 4050 2850
+Wire Wire Line
+	4050 1750 4050 1850
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5FFD8DF1
+P 5650 1600
+F 0 "J1" H 5678 1576 50  0000 L CNN
+F 1 "JST-SH-SM04B-SRSS-TB" H 5678 1485 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 5650 1600 50  0001 C CNN
+F 3 "~" H 5650 1600 50  0001 C CNN
+	1    5650 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 1600 0    50   BiDi ~ 0
+D+
+Text GLabel 5450 1700 0    50   BiDi ~ 0
+D-
+$Comp
+L power:+5V #PWR0104
+U 1 1 5FFD198F
+P 5350 1400
+F 0 "#PWR0104" H 5350 1250 50  0001 C CNN
+F 1 "+5V" H 5365 1573 50  0000 C CNN
+F 2 "" H 5350 1400 50  0001 C CNN
+F 3 "" H 5350 1400 50  0001 C CNN
+	1    5350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FFD1CB0
+P 5350 1900
+F 0 "#PWR0105" H 5350 1650 50  0001 C CNN
+F 1 "GND" H 5355 1727 50  0000 C CNN
+F 2 "" H 5350 1900 50  0001 C CNN
+F 3 "" H 5350 1900 50  0001 C CNN
+	1    5350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1800 5350 1800
+Wire Wire Line
+	5350 1800 5350 1900
+Wire Wire Line
+	5450 1500 5350 1500
+Wire Wire Line
+	5350 1500 5350 1400
+$Comp
+L Type-C:Type-C_USB_C_GCT_USB4085 USB1
+U 1 1 5FFD754E
+P 1950 1950
+F 0 "USB1" H 1783 2987 60  0000 C CNN
+F 1 "Type-C_USB_C_GCT_USB4085" H 1783 2881 60  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 1950 1950 60  0001 C CNN
+F 3 "" H 1950 1950 60  0001 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2700 2600 2800
+Wire Wire Line
+	2550 2300 2600 2300
+Wire Wire Line
+	2600 2300 2600 2600
+Connection ~ 2600 2700
+Wire Wire Line
+	2550 1700 2600 1700
+Wire Wire Line
+	2600 1700 2600 2300
+Connection ~ 2600 2300
+Wire Wire Line
+	2050 1700 2350 1700
+Wire Wire Line
+	2050 2300 2350 2300
+Wire Wire Line
+	2050 1200 2600 1200
+Wire Wire Line
+	2600 1200 2600 1300
+Connection ~ 2600 1700
+Wire Wire Line
+	2050 1300 2600 1300
+Connection ~ 2600 1300
+Wire Wire Line
+	2600 1300 2600 1700
+Text GLabel 2050 2400 2    50   Input ~ 0
+VBUS
+Text GLabel 2050 2500 2    50   Input ~ 0
+VBUS
+Text GLabel 2050 1800 2    50   Input ~ 0
+D-
+Text GLabel 2050 2000 2    50   Input ~ 0
+D-
+Text GLabel 2050 1900 2    50   Input ~ 0
+D+
+Text GLabel 2050 2100 2    50   Input ~ 0
+D+
+Wire Wire Line
+	2050 2700 2600 2700
+Wire Wire Line
+	2050 2600 2600 2600
+Connection ~ 2600 2600
+Wire Wire Line
+	2600 2600 2600 2700
+Wire Wire Line
+	2050 2800 2200 2800
+Wire Wire Line
+	2400 2800 2600 2800
+Connection ~ 2600 2800
+Wire Wire Line
+	2600 2800 2600 3150
+$EndSCHEMATC
