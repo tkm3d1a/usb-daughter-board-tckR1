@@ -255,4 +255,61 @@ Wire Wire Line
 Connection ~ 2600 2800
 Wire Wire Line
 	2600 2800 2600 3150
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60050DD9
+P 1500 3500
+F 0 "H1" H 1600 3546 50  0000 L CNN
+F 1 "MountingHole" H 1600 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 1500 3500 50  0001 C CNN
+F 3 "~" H 1500 3500 50  0001 C CNN
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600515F7
+P 1500 3700
+F 0 "H2" H 1600 3746 50  0000 L CNN
+F 1 "MountingHole" H 1600 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 1500 3700 50  0001 C CNN
+F 3 "~" H 1500 3700 50  0001 C CNN
+	1    1500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 600516ED
+P 1500 3900
+F 0 "H3" H 1600 3946 50  0000 L CNN
+F 1 "MountingHole" H 1600 3855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 1500 3900 50  0001 C CNN
+F 3 "~" H 1500 3900 50  0001 C CNN
+	1    1500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 60051B00
+P 1500 4150
+F 0 "H4" H 1600 4199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1600 4108 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 1500 4150 50  0001 C CNN
+F 3 "~" H 1500 4150 50  0001 C CNN
+	1    1500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 600523FD
+P 1500 4400
+F 0 "#PWR0106" H 1500 4150 50  0001 C CNN
+F 1 "GND" H 1505 4227 50  0000 C CNN
+F 2 "" H 1500 4400 50  0001 C CNN
+F 3 "" H 1500 4400 50  0001 C CNN
+	1    1500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4250 1500 4400
 $EndSCHEMATC

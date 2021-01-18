@@ -274,7 +274,7 @@
     )
   )
 
-  (module Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal (layer F.Cu) (tedit 5B78AD87) (tstamp 5FFC18CD)
+  (module Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal (layer F.Cu) (tedit 5B78AD87) (tstamp 5FFD7541)
     (at 68.35 97.57)
     (descr "JST SH series connector, SM04B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf), generated with kicad-footprint-generator")
     (tags "connector JST SH top entry")
