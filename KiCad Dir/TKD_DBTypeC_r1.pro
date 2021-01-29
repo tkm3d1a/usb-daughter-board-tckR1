@@ -1,4 +1,4 @@
-update=1/11/2021 10:11:46 PM
+update=1/29/2021 11:12:01 AM
 version=1
 last_client=kicad
 [general]
@@ -241,6 +241,17 @@ Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=POWER
+Clearance=0.2
+TrackWidth=0.5
+ViaDiameter=1
+ViaDrill=0.6
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
