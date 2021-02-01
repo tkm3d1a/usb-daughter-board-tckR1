@@ -8,3 +8,7 @@ All work will be done in KiCad as I learn it, this is meant to be the initial re
 Initial idea is for SMT with production from a board manufacturer.  Break out will be done through a planned JST style connector. Breakout will be D+/D-/VCC/GND.
 
 More info to be added through devolpment.
+
+//////////UPDATE 1://///////////
+
+Initial Prototype Board ordered for testing 1/31/2021
